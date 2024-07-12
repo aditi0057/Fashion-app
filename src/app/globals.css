@@ -2,32 +2,166 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Custom Global Styles */
+html, body, #__next {
+  height: 100%;
+  background-color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+a {
+  color: #ff3f6c; /* Myntra's primary color */
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a:hover {
+  color: #e63650;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #333;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: #ff3f6c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e63650;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  margin: 0 1rem;
+}
+
+.main-content {
+  padding-top: 5rem; /* Space for the fixed header */
+}
+
+.footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+.rewards-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+  /* background: linear-gradient(135deg, #ff4081, #ff80ab); */
+  background-size: cover;
+  background-position: center;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.how-it-works {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.how-it-works .step {
+  text-align: center;
+}
+
+.how-it-works .step img {
+  margin-bottom: 1rem;
+}
+
+.rewards-system {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.rewards-system .point-item {
+  margin-bottom: 2rem;
+}
+
+.redeem-points {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.redeem-points .reward-item {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action {
+  background: #ff4081;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.call-to-action button {
+  background-color: white;
+  color: #ff4081;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #f1f1f1;
+}
+
