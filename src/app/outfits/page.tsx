@@ -92,38 +92,38 @@ export default function Outfits() {
     }
   };
 
+  const handleDelete = (id: string) => {
+    setPosts(posts.filter(post => post.id !== id));
+  };
+
   return (
     <div className="main-content flex flex-col items-center relative">
-      <div className="container mb-8 flex">
-        <div className="w-3/4">
-          <h1 className="text-4xl font-bold mb-4">Outfit Streaks</h1>
-          <div className="flex flex-wrap justify-center gap-4">
-            {posts.reduce((acc, post, index) => {
-              if (index % 3 === 0) {
-                acc.push([post]);
-              } else {
-                acc[acc.length - 1].push(post);
-              }
-              return acc;
-            }, []).map((postGroup, groupIndex) => (
-              <div key={groupIndex} className="flex space-x-4 p-2 bg-white shadow-md rounded-lg max-w-full">
-                {postGroup.map((post) => (
-                  <div key={post.id} className="card p-2 flex flex-col items-center bg-white shadow-md rounded-lg max-w-xs">
-                    <img src={post.image} alt={post.outfit} className="w-full h-32 object-cover mb-2 rounded-lg" />
-                    <div className="text-center">
-                      <p className="text-sm"><strong>Date:</strong> {post.date}</p>
-                      <p className="text-sm"><strong>Outfit:</strong> {post.outfit}</p>
-                      <p className="text-sm"><strong>Brand:</strong> {post.brand}</p>
-                      <p className="text-sm"><strong>Product:</strong> {post.product}</p>
-                    </div>
-                  </div>
-                ))}
+      <div className="container mb-8 flex flex-col md:flex-row">
+        <div className="w-full md:w-3/4">
+          <h1 className="text-4xl font-bold mb-6 text-center md:text-left">Outfit Streaks</h1>
+          <div className="scrolling-gallery overflow-x-auto whitespace-nowrap py-2 px-4">
+            {posts.map((post) => (
+              <div key={post.id} className="inline-block card relative p-4 bg-white shadow-lg rounded-lg m-2 transition-transform transform hover:scale-105">
+                <button
+                  onClick={() => handleDelete(post.id)}
+                  className="absolute top-2 right-2 text-red-500 hover:text-red-700"
+                >
+                  &times;
+                </button>
+                <img src={post.image} alt={post.outfit} className="w-full h-48 object-cover mb-4 rounded-lg" />
+                <div className="text-center">
+                  <p className="text-sm text-gray-600"><strong>Date:</strong> {post.date}</p>
+                  <p className="text-sm text-gray-800"><strong>Outfit:</strong> {post.outfit}</p>
+                  <p className="text-sm text-gray-600"><strong>Brand:</strong> {post.brand}</p>
+                  <p className="text-sm text-gray-600"><strong>Product:</strong> {post.product}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="w-1/4 ml-4">
-          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
+        <div className="w-full md:w-1/4 mt-8 md:mt-0 md:ml-8">
+          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-4 text-center">Post Your Outfit</h2>
             <div className="mb-4">
               <label className="block text-gray-700 mb-2">Outfit</label>
               <input
@@ -166,7 +166,7 @@ export default function Outfits() {
                 required
               />
             </div>
-            <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            <button type="submit" className="post-outfit-button">
               Post Outfit
             </button>
           </form>

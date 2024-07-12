@@ -107,52 +107,387 @@ header {
   color: white;
 }
 
+/* General Styles */
+.rewards-page {
+  font-family: 'Arial, sans-serif';
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* How It Works Section */
 .how-it-works {
   padding: 4rem 1rem;
   text-align: center;
+  background: #f0f4f8;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .how-it-works .step {
-  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works .step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .how-it-works .step img {
+  width: 60px;
+  height: 60px;
   margin-bottom: 1rem;
+  border-radius: 50%;
 }
 
+.how-it-works .step h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6a11cb;
+}
+
+.how-it-works .step p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Rewards Points System Section */
 .rewards-system {
   padding: 4rem 1rem;
   background-color: #f9f9f9;
   text-align: center;
 }
 
-.rewards-system .point-item {
+.rewards-system h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 2rem;
+  color: #333;
 }
 
+.rewards-system p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.rewards-system .point-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rewards-system .point-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.rewards-system .point-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2575fc;
+}
+
+.rewards-system .point-item p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Redeem Points Section */
 .redeem-points {
   padding: 4rem 1rem;
   text-align: center;
 }
 
-.redeem-points .reward-item {
-  padding: 2rem;
+.redeem-points h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 2rem;
-  background: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
+.redeem-points .reward-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redeem-points .reward-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.redeem-points .reward-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6a11cb;
+}
+
+.redeem-points .reward-item p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Call to Action Section */
 .call-to-action {
-  background: #ff4081;
+  background: linear-gradient(to right, #ff4081, #ff80ab);
   padding: 4rem 1rem;
   color: white;
   text-align: center;
 }
 
+.call-to-action h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.call-to-action p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ffe1e6;
+}
+
 .call-to-action button {
   background-color: white;
   color: #ff4081;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+/* Custom CSS if needed */
+.rewards-page {
+  font-family: 'Arial, sans-serif';
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-shadow-lg {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+button:hover {
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* General Styles */
+.main-content {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f9;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Scrolling Gallery */
+.scrolling-gallery {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.scrolling-gallery::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.scrolling-gallery {
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  flex: 0 0 auto; /* Ensure cards don't shrink */
+  margin-right: 1rem; /* Spacing between cards */
+  width: 300px; /* Fixed width for consistency */
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: darkred;
+}
+
+/* Form Styles */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+form h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+form label {
+  color: #555;
+  font-weight: bold;
+}
+
+form input[type="text"], form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus, form input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form button {
+  background-color: #da409f;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #6e064d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .scrolling-gallery {
+    padding: 0.5rem 0;
+  }
+
+  .card {
+    margin-right: 0.5rem;
+    width: 90%; /* Ensure cards are more responsive on smaller screens */
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+}
+.post-outfit-button {
+  width: 100%;
+  background-color: #da409f; /* Example background color */
+  color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.25rem;
@@ -161,7 +496,7 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.call-to-action button:hover {
-  background-color: #f1f1f1;
+.post-outfit-button:hover {
+  background-color: #6e064d; /* Example hover background color */
 }
 
