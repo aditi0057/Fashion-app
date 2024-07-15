@@ -97,41 +97,39 @@ export default function Outfits() {
   };
 
   return (
-    <div className="main-content flex flex-col items-center relative">
-      <div className="container mb-8 flex flex-col md:flex-row">
-        <div className="w-full md:w-3/4">
-          <h1 className="text-4xl font-bold mb-6 text-center md:text-left">Outfit Streaks</h1>
-          <div className="scrolling-gallery overflow-x-auto whitespace-nowrap py-2 px-4">
-            {posts.map((post) => (
-              <div key={post.id} className="inline-block card relative p-4 bg-white shadow-lg rounded-lg m-2 transition-transform transform hover:scale-105">
-                <button
-                  onClick={() => handleDelete(post.id)}
-                  className="absolute top-2 right-2 text-red-500 hover:text-red-700"
-                >
-                  &times;
-                </button>
-                <img src={post.image} alt={post.outfit} className="w-full h-48 object-cover mb-4 rounded-lg" />
-                <div className="text-center">
-                  <p className="text-sm text-gray-600"><strong>Date:</strong> {post.date}</p>
-                  <p className="text-sm text-gray-800"><strong>Outfit:</strong> {post.outfit}</p>
-                  <p className="text-sm text-gray-600"><strong>Brand:</strong> {post.brand}</p>
-                  <p className="text-sm text-gray-600"><strong>Product:</strong> {post.product}</p>
-                </div>
+    <div className="main-content flex flex-col items-center relative bg-pink-50">
+      <div className="container mb-8">
+        <h1 className="text-4xl font-bold mb-6 text-center text-pink-600">Outfit Streaks</h1>
+        <div className="scrolling-gallery overflow-x-auto whitespace-nowrap py-4 px-4 flex space-x-4">
+          {posts.map((post) => (
+            <div key={post.id} className="inline-block card relative p-4 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105">
+              <button
+                onClick={() => handleDelete(post.id)}
+                className="absolute top-2 right-2 text-red-500 hover:text-red-700"
+              >
+                &times;
+              </button>
+              <img src={post.image} alt={post.outfit} className="w-48 h-48 object-cover mb-4 rounded-lg" />
+              <div className="text-center">
+                <p className="text-sm text-gray-600"><strong>Date:</strong> {post.date}</p>
+                <p className="text-sm text-gray-800"><strong>Outfit:</strong> {post.outfit}</p>
+                <p className="text-sm text-gray-600"><strong>Brand:</strong> {post.brand}</p>
+                <p className="text-sm text-gray-600"><strong>Product:</strong> {post.product}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-        <div className="w-full md:w-1/4 mt-8 md:mt-0 md:ml-8">
-          <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-center">Post Your Outfit</h2>
+        <div className="mt-8  w-full flex justify-center">
+          <form onSubmit={handleSubmit} className="bg-white p-6  px-60 rounded-lg shadow-lg w-full">
+            <h2 className="text-2xl font-bold mb-4 text-center text-pink-600">Post Your Outfit</h2>
             <div className="mb-4">
-              <label className="block text-gray-700 mb-2">Outfit</label>
+              <label className="block text-gray-700 mb-2"> Outfit </label>
               <input
                 type="text"
                 value={outfit}
                 onChange={(e) => setOutfit(e.target.value)}
                 placeholder="Describe your outfit"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-pink-500"
                 required
               />
             </div>
@@ -142,7 +140,7 @@ export default function Outfits() {
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
                 placeholder="Brand name"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-pink-500"
                 required
               />
             </div>
@@ -153,7 +151,7 @@ export default function Outfits() {
                 value={product}
                 onChange={(e) => setProduct(e.target.value)}
                 placeholder="Product details"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-pink-500"
                 required
               />
             </div>
@@ -162,11 +160,11 @@ export default function Outfits() {
               <input
                 type="file"
                 onChange={handleImageChange}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-pink-500"
                 required
               />
             </div>
-            <button type="submit" className="post-outfit-button">
+            <button type="submit" className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg w-full">
               Post Outfit
             </button>
           </form>

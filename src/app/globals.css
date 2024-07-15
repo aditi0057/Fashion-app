@@ -92,27 +92,31 @@ button:hover {
   text-align: center;
   margin-top: 2rem;
 }
-.rewards-page {
+/* .rewards-page {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 header {
-  /* background: linear-gradient(135deg, #ff4081, #ff80ab); */
+  
   background-size: cover;
   background-position: center;
-  height: 5rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
+header text{
+  font-size: 5rem;
+font-weight: 700;
+}
 
-/* General Styles */
+
 .rewards-page {
   font-family: 'Arial, sans-serif';
 }
 
-/* Header Section */
+
 .header {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   height: 100vh;
@@ -124,12 +128,11 @@ header {
 }
 
 .header h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 10rem;
+  font-weight: 900;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* How It Works Section */
 .how-it-works {
   padding: 4rem 1rem;
   text-align: center;
@@ -178,7 +181,7 @@ header {
   color: #555;
 }
 
-/* Rewards Points System Section */
+
 .rewards-system {
   padding: 4rem 1rem;
   background-color: #f9f9f9;
@@ -226,7 +229,7 @@ header {
   color: #666;
 }
 
-/* Redeem Points Section */
+
 .redeem-points {
   padding: 4rem 1rem;
   text-align: center;
@@ -267,7 +270,7 @@ header {
   color: #666;
 }
 
-/* Call to Action Section */
+
 .call-to-action {
   background: linear-gradient(to right, #ff4081, #ff80ab);
   padding: 4rem 1rem;
@@ -303,7 +306,258 @@ header {
   transform: translateY(-3px);
 }
 
-/* Custom CSS if needed */
+
+.rewards-page {
+  font-family: 'Arial, sans-serif';
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-shadow-lg {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+button:hover {
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+} */
+
+.rewards-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(to right, #ff95b5, #ffebf4, #ff95b5);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.how-it-works {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: white;
+ 
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.how-it-works .step {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works .step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.how-it-works .step img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.how-it-works .step h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6a11cb;
+}
+
+.how-it-works .step p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rewards-system {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.rewards-system h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.rewards-system p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.rewards-system .point-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.rewards-system .point-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.rewards-system .point-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2575fc;
+}
+
+.rewards-system .point-item p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.redeem-points {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.redeem-points h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.redeem-points .reward-item {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+
+}
+
+.redeem-points .reward-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.redeem-points .reward-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6a11cb;
+}
+
+.redeem-points .reward-item p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.call-to-action {
+  background: linear-gradient(to right, #ff95b5, #ffebf4, #ff95b5);
+  padding: 1rem 0.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color:black;
+}
+
+.call-to-action p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.call-to-action button {
+  background-color: white;
+  color: #ff4081;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #ffa9c7;
+  transform: translateY(-3px);
+}
+
 .rewards-page {
   font-family: 'Arial, sans-serif';
 }
@@ -341,6 +595,7 @@ button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
+
 
 /* General Styles */
 .main-content {
@@ -498,5 +753,418 @@ form button:hover {
 
 .post-outfit-button:hover {
   background-color: #6e064d; /* Example hover background color */
+}
+
+
+
+
+/* Custom Global Styles */
+html, body, #__next {
+  height: 100%;
+  background-color: #ffe4e6;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  color: #ff98b0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff90a1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: #ffb1c3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffa2b0;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  margin: 0 1rem;
+}
+
+.main-content {
+  padding-top: 5rem; /* Space for the fixed header */
+}
+
+.footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Additional Styles for Fashion Challenges Component */
+.fashion-challenges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.fashion-challenges-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  background-clip: text;
+  background: linear-gradient(to right, #fa3261, #ffb5c7, #fa4f77);
+}
+
+.fashion-challenges-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .fashion-challenges-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .fashion-challenges-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.fashion-challenge-card {
+  background-color: #fff;
+  border: 1px solid #ff9cb3;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fashion-challenge-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fashion-challenge-card-title {
+  background: linear-gradient(to right, #ff5d83, #ff90aa);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+
+.fashion-challenge-card-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.fashion-challenge-card-image {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffe4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #ff3f6c;
+}
+
+.fashion-challenge-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fashion-challenge-card-content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.fashion-challenge-card-description {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.fashion-challenge-card-button {
+  background: linear-gradient(to right, #ff3f6c, #ff3f6c);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fashion-challenge-card-button:hover {
+  background: linear-gradient(to right, #ff3f6c, #ff3f6c);
+}
+
+.fashion-challenge-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.fashion-challenge-modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 30rem;
+  width: 100%;
+  position: relative;
+}
+
+.fashion-challenge-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.fashion-challenge-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.fashion-challenge-modal-description {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.fashion-challenge-modal-button {
+  background-color: #ff3f6c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fashion-challenge-modal-button:hover {
+  background-color: #e63650;
+}
+
+
+/* styles/globals.css */
+
+.feed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.section-title {
+  color: #e91e63;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.polaroid,
+.tube-card,
+.offer-card,
+.spotlight-card {
+  background-color: #ffffff;
+  border: 1px solid #f8bbd0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.polaroid:hover,
+.tube-card:hover,
+.offer-card:hover,
+.spotlight-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.polaroid .title,
+.tube-card .title,
+.offer-card .title,
+.spotlight-card .title {
+  background: linear-gradient(to right, #ec407a, #d81b60);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.polaroid .title:hover,
+.tube-card .title:hover,
+.offer-card .title:hover,
+.spotlight-card .title:hover {
+  transform: translateX(0.5rem);
+}
+
+.tube-card,
+.offer-card,
+.spotlight-card {
+  width: 18rem;
+}
+
+@media (min-width: 768px) {
+  .tube-card,
+  .offer-card,
+  .spotlight-card {
+    width: 20rem;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  .tube-card,
+  .offer-card,
+  .spotlight-card {
+    
+  }
+} */
+
+.section-gap {
+  margin-bottom: 3rem;
+}
+
+/* Highlight headings more */
+.section-title {
+  color: #e91e63;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+/* Smaller cards */
+.polaroid,
+.tube-card,
+.offer-card,
+.spotlight-card {
+  background-color: #ffffff;
+  border: 1px solid #f8bbd0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  transform: scale(1);
+  margin-bottom: 2rem; /* Add space between cards */
+}
+
+.polaroid:hover,
+.tube-card:hover,
+.offer-card:hover,
+.spotlight-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.card-title {
+  background: linear-gradient(to right, #ff8db3, #ff619b);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.card-title:hover {
+  transform: translateX(0.5rem);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .tube-card,
+  .offer-card,
+  .spotlight-card {
+    width: 16rem; /* Adjust width for smaller cards */
+  }
 }
 

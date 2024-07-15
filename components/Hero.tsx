@@ -1,9 +1,5 @@
 import Link from 'next/link';
-import Outfits from '../src/app/outfits/page';
-import Chat from '../src/app/chat/page';
-import Feed from '../src/app/feed/page';
-import Challenges from '../src/app/challenges/page';
-import Rewards from '../src/app/rewards/page';
+
 
 export default function Home() {
   return (

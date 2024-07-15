@@ -18,7 +18,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@lib/*": ["./lib/*"]  // Added to ensure the `lib` directory is recognized
     },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
