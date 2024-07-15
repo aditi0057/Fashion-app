@@ -1,8 +1,5 @@
-
 // pages/index.tsx
-
-"use client";
-
+"use client"
 import { useState } from 'react';
 import Head from 'next/head';
 import { FaTimes } from 'react-icons/fa';
@@ -58,6 +55,9 @@ const FashionChallenges = () => {
 
   return (
     <div className="fashion-challenges-container">
+      <Head>
+        <title>Fashion Challenges</title>
+      </Head>
       <h1 className="fashion-challenges-title">
         <span className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
           Fashion Challenges
@@ -91,7 +91,7 @@ const FashionChallenges = () => {
             </div>
           </div>
         ))}
-
+      </div>
 
       {selectedChallenge && (
         <div className="fashion-challenge-modal">
@@ -112,9 +112,9 @@ const FashionChallenges = () => {
             </button>
           </div>
         </div>
-       
       )}
-    </div> 
     </div>
   );
 };
+
+export default FashionChallenges;
