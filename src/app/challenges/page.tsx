@@ -1,3 +1,4 @@
+
 // pages/index.tsx
 
 "use client";
@@ -90,7 +91,7 @@ const FashionChallenges = () => {
             </div>
           </div>
         ))}
-      </div>
+
 
       {selectedChallenge && (
         <div className="fashion-challenge-modal">
@@ -111,23 +112,9 @@ const FashionChallenges = () => {
             </button>
           </div>
         </div>
+       
       )}
+    </div> 
     </div>
   );
 };
-
-export default function Home() {
-  return (
-    <div className="bg-gradient-to-r from-pink-100 to-pink-200 min-h-screen">
-      <div className="flex flex-col items-center justify-center py-12">
-        <Head>
-          <title>Fashion Challenge App</title>
-          <meta name="description" content="A fashion challenge section for a fashion app" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        
-        <FashionChallenges />
-      </div>
-    </div>
-  );
-}
